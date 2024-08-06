@@ -1,14 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #a9c7e0;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
 nav{
-    width: 100%;
+    width: 100vw;
     height: 110px;
     background-color: rgba(71, 71,186,0.804);
     display: flex;
@@ -43,4 +45,35 @@ i{
 }
 .cart img{
     padding-left: 10px;
+}
+
+
+/* media query for small screen */
+@media(max-with:100px){
+    nav{
+        height: 80px;
+    }
+    #logo{
+        width: 70px;
+        height: 70px;
+    }
+  
+    input{
+        width: 250px;
+        height: 30px;
+    }
+    
+    i{
+        margin-left:-20px ;
+        padding: 7px;
+    }
+    .cart{
+        padding: 0px 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .cart img{
+        padding-left: 7px;
+    }
+    
 }
