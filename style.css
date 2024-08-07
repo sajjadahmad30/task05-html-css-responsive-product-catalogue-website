@@ -258,7 +258,27 @@ i{
    font-size: medium;
 }
 
-    
+
+/* laptop */
+.laptops{
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    justify-content: space-around;
+
+}
+.laptops div{
+   margin-bottom:10px ;
+}
+.laptops div img{
+    height: 170px;
+    width: 180px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+
 }
 
 /* media query for mobile screen */
@@ -332,6 +352,32 @@ i{
     justify-content: space-around;
     }
     
+    /* laptop */
+    #laptop-heading{
+        margin-top: 30px;
+        margin-bottom:0px ;
+        padding: 20px 20px;
+        font-size: 2.5vh;
+    }
+    .laptops{
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-around;
+    }
+    .laptops .notify{
+        width: 80px;
+        height: 20px;
+    }
+    .laptops .notify p{
+        padding-top: 3px;
+        font-size: 2vh;
+    }
+    .laptops h4{
+        font-size: 2vh;
+        padding-top: 3px;
+        padding-bottom: 10px;
+
+    }
 
 
 }
