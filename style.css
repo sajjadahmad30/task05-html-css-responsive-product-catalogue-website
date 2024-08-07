@@ -16,6 +16,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #logo{
@@ -47,6 +48,38 @@ i{
     padding-left: 10px;
 }
 
+/* Home */
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+}
+
+.categories{
+    background-color: aliceblue;
+    border: 1px solid wheat;
+    padding: 15px;
+}
+
+.categories h2{
+    background-color: rgba(71, 71,186,0.804);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.categories li{
+    list-style: none;
+    padding: 8px 0px;
+    padding-left: 20px;
+}
+.categories li a{
+   text-decoration: none;
+   color: black;
+}
+
+
 
 /* media query for small screen */
 @media(max-width:1000px){
@@ -75,6 +108,16 @@ i{
     .cart img{
         padding-left: 7px;
     }    
+
+    /* home */
+    .categories h2{
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .categories li{
+        padding: 6px 0px;
+    }
+    
 }
 
 /* media query for mobile screen */
@@ -108,4 +151,25 @@ i{
     .cart img{
         padding-left: 05px;
     }
+
+    /* home */
+    .home{
+        margin: 20px 0px; 
+    }
+    .categories{
+        padding: 5px;
+        height: 70px;
+    }
+    .categories h2{
+        font-size: 7px;
+        padding: 2px;
+        padding-top: 2px;
+    }
+    .categories li{
+        padding: 2px 0px;
+        font-size: 1vh;
+    }
 }
+
+
+
