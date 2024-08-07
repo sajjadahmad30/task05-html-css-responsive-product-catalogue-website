@@ -30,6 +30,13 @@ nav{
 input{
     width: 450px;
     height: 40px;
+    border: none;
+    outline: none;
+    font-size: x-large;
+}
+input:hover{
+   box-shadow: 2px 2px 2px #dcba0d;
+   border:2px solid #dcba0d;
 }
 
 i{
@@ -37,6 +44,7 @@ i{
     color: #fff;
     padding: 9px;
     margin-left:-30px ;
+    cursor: pointer;
 }
 .cart{
     display: flex;
@@ -81,6 +89,12 @@ i{
    text-decoration: none;
    color: black;
 }
+.categories li a:hover{
+   text-decoration: underline #074a81;
+   border-radius:7px;
+   color: black;
+   box-shadow: 2px 2px 5px #074a81;
+}
 .background-image{
     background: url(./images/back-img2.jpg)no-repeat;
     background-position: bottom;
@@ -116,11 +130,11 @@ i{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-color: #bfd2df;
-    background-color: #fafafa;
-    border: 1px solid gainsboro;
+    background-color: #91b5d3;
+    box-shadow: 4px 4px 3px black ;
     text-align: center;
     margin: 10px 0px;
+    cursor: pointer;
 }
 .Mobiles div img{
     width: 140px;
@@ -155,18 +169,22 @@ i{
     background-color: #c8e6f6;
     border: 1px solid #c8e6f6;
     text-align: center;
+    padding-bottom: 24px;
+    cursor: pointer;
+
+
 }
 .laptops div img{
     height: 160px;
     width: 180px;
     border-radius: 5px;
     margin: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     background-color: transparent;
 }
-.notify{
-    background-color: #00000078;
-    color: #fff;
+div .notify{
+    background-color:#91b5d3;
+    /* color: #fff; */
     width: 90px;
     height: 40px;
     padding: 0;
@@ -206,6 +224,8 @@ i{
     margin-bottom: 20px;
     padding: 10px 50px;
     box-shadow: rgba(0,0,0, 0.43) 0px 5px 10px;
+    cursor: pointer;
+
 }
 .smart-watches div img{
     width: 180px;
