@@ -11,7 +11,7 @@ body{
 /* Navigation Bar */
 nav{
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: rgba(71, 71,186,0.804);
     display: flex;
     justify-content: space-evenly;
@@ -20,8 +20,8 @@ nav{
 }
 
 #logo{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 .input{
@@ -136,6 +136,55 @@ i{
 .Mobiles span p:first-child{
     font-weight: bold;
 }
+
+
+/* laptop */
+#laptop-heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.laptops{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: space-around;
+
+}
+.laptops div{
+    align-items: center;
+    background-color: #c8e6f6;
+    border: 1px solid #c8e6f6;
+    text-align: center;
+}
+.laptops div img{
+    height: 160px;
+    width: 180px;
+    border-radius: 5px;
+    margin: 15px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.notify{
+    background-color: #00000078;
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin-top: 10px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.notify p{
+    padding-top: 10px;
+    font-size: small;
+}
+.notify h4{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
 
 /* media query for small screen */
 @media(max-width:1000px){
@@ -282,6 +331,7 @@ i{
     grid-template-columns: 45% 45%;
     justify-content: space-around;
     }
+    
 
 
 }
