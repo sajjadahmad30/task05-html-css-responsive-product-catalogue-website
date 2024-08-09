@@ -18,7 +18,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0px;
-    
+    z-index: 1;
 }
 
 #logo{
@@ -106,6 +106,7 @@ i{
 .background-image h2{
     text-align: center;
     font-size: 28px;
+    color: #fff;
 }
 .background-image img{
     width: 350px;
@@ -134,6 +135,9 @@ i{
     text-align: center;
     margin: 10px 0px;
     cursor: pointer;
+}
+.Mobiles div:hover{
+  transform: scale(1.1);
 }
 .Mobiles div img{
     width: 140px;
@@ -172,6 +176,10 @@ i{
     cursor: pointer;
 
 
+}
+.laptops div:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 .laptops div img{
     height: 160px;
@@ -225,6 +233,7 @@ div .notify{
     cursor: pointer;
 
 }
+
 .smart-watches div img{
     width: 180px;
     height: 180px;
@@ -339,7 +348,7 @@ footer img{
 
 }
 .laptops div{
-   margin-bottom:10px ;
+   margin-bottom:20px ;
 }
 .laptops div img{
     height: 170px;
