@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #a9c7e0;
+    /* background-color: #a9c7e0; */
+    background-color: #fff;
 
 }
 
@@ -12,7 +13,8 @@ body{
 nav{
     width: 100%;
     height: 110px;
-    background-color: rgba(4, 4, 82, 0.804);
+    background-color: #f9fafb;
+    box-shadow:inset -0px -2px 3px gray    ;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -35,17 +37,21 @@ input{
     border: none;
     outline: none;
     font-size: x-large;
+    border-radius: 5px;
+   border:3px solid #dca50d;
+
 }
 input:hover{
-   box-shadow: 2px 2px 2px #dcba0d;
-   border:2px solid #dcba0d;
+   box-shadow:inset 1px 1px 2px #dcba0d;
 }
 
 i{
-    background-color: rgba(222, 204,70);
+    background-color:  #dca50d;
     padding: 9px;
     margin-left:-30px ;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .cart{
     display: flex;
@@ -69,9 +75,11 @@ i{
 }
 
 .categories{
-    background-color: aliceblue;
+    /* background-color: rgb(183, 214, 240); */
+    background-color: #91b5d3;
     border: 1px solid wheat;
     padding: 15px;
+    box-shadow: 2px 2px 3px rgb(27, 26, 26);
 }
 
 .categories h2{
@@ -93,7 +101,7 @@ i{
    text-decoration: underline #074a81;
    border-radius:7px;
    color: black;
-   box-shadow: 2px 2px 5px #074a81;
+   box-shadow:inset 1px 1px 1px #c2dbf3;
 }
 .background-image{
     background: url(./images/back-img2.jpg)no-repeat;
@@ -102,6 +110,8 @@ i{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 3px 3px 4px rgb(27, 26, 26);
+
 }
 .background-image h2{
     text-align: center;
@@ -138,6 +148,7 @@ i{
 }
 .Mobiles div:hover{
   transform: scale(1.1);
+  transition: 0.8s;
 }
 .Mobiles div img{
     width: 140px;
@@ -152,6 +163,7 @@ i{
 }
 .Mobiles span p:first-child{
     font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -174,18 +186,17 @@ i{
     text-align: center;
     padding-bottom: 24px;
     cursor: pointer;
-
-
 }
 .laptops div:hover{
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.8s;
+    box-shadow: 3px 3px 4px gray;
 }
 .laptops div img{
     height: 160px;
     width: 180px;
     border-radius: 5px;
-    margin: 15px;
+    margin: 10px;
     margin-bottom: 15px;
     background-color: transparent;
 }
@@ -218,7 +229,7 @@ div .notify{
 .smart-watches{
     display: grid;
     grid-template-columns: 40% 40%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .smart-watches div{
     display: flex;
@@ -229,7 +240,8 @@ div .notify{
     height: 200px;
     margin-bottom: 20px;
     padding: 10px 50px;
-    box-shadow: rgba(0,0,0, 0.43) 0px 5px 10px;
+    box-shadow: rgba(0,0,0, 0.3) 2px 9px 10px;
+    border-radius: 10px;
     cursor: pointer;
 
 }
@@ -240,6 +252,7 @@ div .notify{
     border-radius: 10px;
     
 }
+
 .smart-watches div p{
     font-weight: bold;
     font-size: 18px;
@@ -251,17 +264,22 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 70px;
-    background-color: #91b5d3;
+    background-color: #f9fafb;
+    padding: 11px;
 }
 footer img{
     width: 50px;
     height: 50px;
     padding: 10px;
+    border-radius: 20px
+}
+footer img:hover{
+   box-shadow:inset 2px 2px 3px rgb(39, 35, 35);
 }
 #all-rights{
     text-align: center;
-    color: #000;
-    background-color: #91b5d3;
+    color: #fff;
+    background-color: #191a1c;
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -280,6 +298,8 @@ footer img{
     input{
         width: 250px;
         height: 30px;
+    font-size: large;
+
     }
     
     i{
@@ -388,6 +408,59 @@ footer img{
 
 }
 
+
+
+@media (max-width:778px){
+    .categories h2{
+        font-size: 8px;
+    }
+    .categories ul li a{
+        font-size: 10px;
+    }
+    /* laptop */
+.laptops{
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    justify-content: space-around;
+
+}
+.laptops div{
+   margin-bottom:15px ;
+}
+.laptops div img{
+    height: 170px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 8px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+}
+
+
+
+@media (max-width:685px){
+.smart-watches div{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: #91b5d3;
+    width: 180px;
+    height: 95%;
+    padding: 7px 7px;
+}
+.smart-watches div img{
+    width: 100px;
+    height: 130px;
+    
+}
+.smart-watches div p{
+    text-align: center;
+      font-size: 13px;
+  }
+}
+
 /* media query for mobile screen */
 @media(max-width:400px){
 
@@ -404,6 +477,8 @@ footer img{
     input{
         width: 170px;
         height: 25px;
+    font-size: small;
+
     }
     
     i{
@@ -429,6 +504,7 @@ footer img{
         padding: 5px;
         height: 70px;
     }
+    
     .categories h2{
         font-size: 7px;
         padding: 2px;
@@ -437,6 +513,10 @@ footer img{
     .categories li{
         padding: 2px 0px;
         font-size: 1vh;
+    }
+    .categories ul li a{
+        padding: 2px 0px;
+        font-size: 6px;
     }
     .background-image h2{
         font-size: 10px;
@@ -468,12 +548,19 @@ footer img{
     }
     .laptops{
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 70%;
         justify-content: space-around;
+    }
+    .laptops div img{
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+        margin: 5px;
+      
     }
     .laptops .notify{
         width: 80px;
-        height: 20px;
+        height: 30px;
     }
     .laptops .notify p{
         padding-top: 3px;
